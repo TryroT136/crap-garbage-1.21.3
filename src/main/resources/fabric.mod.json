@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "crap-garbage",
+	"version": "${version}",
+	"name": "crap garbage",
+	"description": "following a tutorial by Kaupenjoe",
+	"authors": [
+		"TryroT136!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/crap-garbage/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tryrot136.crapgarbage.CrapGarbage"
+		],
+		"client": [
+			"tryrot136.crapgarbage.CrapGarbageClient"
+		],
+		"fabric-datagen": [
+			"tryrot136.crapgarbage.CrapGarbageDataGenerator"
+		]
+	},
+	"mixins": [
+		"crap-garbage.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
